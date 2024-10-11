@@ -153,6 +153,7 @@ export default {
 
     // Reiniciar el juego
     const resetGame = () => {
+      stopTimer();
       cards.value = generateCards();
       flippedCards.value = [];
       gameOver.value = false;
